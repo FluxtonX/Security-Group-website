@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { ChevronDown, Phone, Mail, Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const ModernNavbarSystem = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
   const navData = {
     topBar: {
       phone: "0208 6165454",
@@ -90,12 +91,11 @@ const ModernNavbarSystem = () => {
             name: "Training Programs",
             slug: "training-programs",
             content: "Training programs info.",
-
           },
           { name: "Benefits", slug: "benefits", content: "Job benefits." },
         ],
       },
-      { name: "Training", href: "/Training", hasDropdown: false },
+      { name: "Training", href: "/training", hasDropdown: false },
       { name: "News", href: "/news", hasDropdown: false },
       { name: "Contact", href: "/contact", hasDropdown: false, isButton: true },
     ],
@@ -160,29 +160,41 @@ const ModernNavbarSystem = () => {
                       onMouseLeave={handleMouseLeave}
                     >
                       {item.isButton ? (
-                        <a
-                          href={item.href}
-                          className="bg-primary-hover  text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                        <Link
+                          to={item.href}
+                          className="bg-primary-hover text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200"
                         >
                           {item.name}
-                        </a>
-                      ) : (
+                        </Link>
+                      ) : item.hasDropdown ? (
                         <button
-                          className="text-gray-700 hover:text-primary-text px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors duration-200"
-                          onClick={() =>
-                            item.hasDropdown && handleDropdownToggle(index)
-                          }
+                          type="button"
+                          className={`px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors duration-200 text-gray-700 hover:text-primary-text focus:outline-none ${
+                            activeDropdown === index
+                              ? "bg-primary-light text-primary-text font-bold"
+                              : ""
+                          }`}
+                          onClick={() => handleDropdownToggle(index)}
                         >
                           {item.name}
-                          {item.hasDropdown && (
-                            <ChevronDown
-                              size={16}
-                              className={`ml-1 transition-transform duration-200 ${
-                                activeDropdown === index ? "rotate-180" : ""
-                              }`}
-                            />
-                          )}
+                          <ChevronDown
+                            size={16}
+                            className={`ml-1 transition-transform duration-200 ${
+                              activeDropdown === index ? "rotate-180" : ""
+                            }`}
+                          />
                         </button>
+                      ) : (
+                        <Link
+                          to={item.href}
+                          className={`px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors duration-200 text-gray-700 hover:text-primary-text ${
+                            location.pathname === item.href
+                              ? "bg-primary-light text-primary-text font-bold"
+                              : ""
+                          }`}
+                        >
+                          {item.name}
+                        </Link>
                       )}
 
                       {/* Dropdown Menu */}
@@ -225,26 +237,45 @@ const ModernNavbarSystem = () => {
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
                   {navData.mainNav.map((item, index) => (
                     <div key={index}>
-                      <button
-                        className={`w-full text-left px-3 py-2 rounded-md text-base font-medium flex items-center justify-between ${
-                          item.isButton
-                            ? "bg-primary-hover text-white hover:bg-primary"
-                            : "text-gray-700 hover:text-primary-text hover:bg-primary-light"
-                        } transition-colors duration-200`}
-                        onClick={() =>
-                          item.hasDropdown && handleDropdownToggle(index)
-                        }
-                      >
-                        {item.name}
-                        {item.hasDropdown && (
+                      {item.hasDropdown ? (
+                        <button
+                          type="button"
+                          className={`w-full text-left px-3 py-2 rounded-md text-base font-medium flex items-center justify-between transition-colors duration-200 ${
+                            activeDropdown === index
+                              ? "bg-primary-light text-primary-text font-bold"
+                              : "text-gray-700 hover:text-primary-text hover:bg-primary-light"
+                          }`}
+                          onClick={() => handleDropdownToggle(index)}
+                        >
+                          {item.name}
                           <ChevronDown
                             size={16}
                             className={`transition-transform duration-200 ${
                               activeDropdown === index ? "rotate-180" : ""
                             }`}
                           />
-                        )}
-                      </button>
+                        </button>
+                      ) : (
+                        <button
+                          type="button"
+                          className={`w-full text-left px-3 py-2 rounded-md text-base font-medium flex items-center justify-between transition-colors duration-200 ${
+                            item.isButton
+                              ? "bg-primary-hover text-white hover:bg-primary"
+                              : `${
+                                  location.pathname === item.href
+                                    ? "bg-primary-light text-primary-text font-bold"
+                                    : "text-gray-700 hover:text-primary-text hover:bg-primary-light"
+                                }`
+                          }`}
+                          onClick={() => {
+                            if (!item.isButton) {
+                              window.location.href = item.href;
+                            }
+                          }}
+                        >
+                          {item.name}
+                        </button>
+                      )}
 
                       {/* Mobile Dropdown */}
                       {item.hasDropdown && activeDropdown === index && (
