@@ -1,106 +1,11 @@
 import React, { useState } from "react";
 import { ChevronDown, Phone, Mail, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import navData from "../../utils/navdata.jsx"; // Adjust the import path as necessary
 const ModernNavbarSystem = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const navData = {
-    topBar: {
-      phone: "0208 6165454",
-      email: "info@m4securitygroup.co.uk",
-    },
-    logo: {
-      text: "M4",
-      subtitle: "SECURITY GROUP",
-    },
-    mainNav: [
-      { name: "Home", href: "/", hasDropdown: false },
-      {
-        name: "Who We Are",
-        href: "/who-we-are",
-        hasDropdown: true,
-        dropdownItems: [
-          {
-            name: "About M4SG",
-            slug: "about-m4sg",
-            content: "About M4SG page.",
-          },
-          {
-            name: "Corporate Social Responsibility",
-            slug: "csr",
-            content: "CSR page.",
-          },
-          {
-            name: "Management",
-            slug: "management",
-            content: "Management page.",
-          },
-          {
-            name: "Accreditation",
-            slug: "accreditation",
-            content: "Accreditation page.",
-          },
-          { name: "Location", slug: "location", content: "Location page." },
-        ],
-      },
-      {
-        name: "Services",
-        href: "/services",
-        hasDropdown: true,
-        dropdownItems: [
-          {
-            name: "Security Guards",
-            slug: "security-guards",
-            content: "Security Guards service.",
-          },
-          {
-            name: "Mobile Patrols",
-            slug: "mobile-patrols",
-            content: "Mobile Patrols service.",
-          },
-          {
-            name: "CCTV Monitoring",
-            slug: "cctv",
-            content: "CCTV Monitoring service.",
-          },
-          {
-            name: "Access Control",
-            slug: "access-control",
-            content: "Access Control service.",
-          },
-          {
-            name: "Event Security",
-            slug: "event-security",
-            content: "Event Security service.",
-          },
-        ],
-      },
-      {
-        name: "Careers",
-        href: "/careers",
-        hasDropdown: true,
-        dropdownItems: [
-          {
-            name: "Current Openings",
-            slug: "current-openings",
-            content: "Current job openings.",
-          },
-          { name: "Apply Online", slug: "apply", content: "Apply Online." },
-          {
-            name: "Training Programs",
-            slug: "training-programs",
-            content: "Training programs info.",
-          },
-          { name: "Benefits", slug: "benefits", content: "Job benefits." },
-        ],
-      },
-      { name: "Training", href: "/training", hasDropdown: false },
-      { name: "News", href: "/news", hasDropdown: false },
-      { name: "Contact", href: "/contact", hasDropdown: false, isButton: true },
-    ],
-  };
-
   const handleDropdownToggle = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
