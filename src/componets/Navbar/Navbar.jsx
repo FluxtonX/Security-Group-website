@@ -46,7 +46,7 @@ const ModernNavbarSystem = () => {
                 <div className="flex items-center">
                   <div className="text-2xl font-bold text-gray-800">
                     {navData.logo.text}
-                    <span className="text-primary-text">4</span>
+                    <span className="text-primary-text">EDGESECUTYLTD</span>
                   </div>
                   <div className="ml-2 text-xs text-gray-600 font-medium">
                     {navData.logo.subtitle}

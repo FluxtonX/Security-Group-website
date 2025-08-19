@@ -4,8 +4,8 @@
       email: "info@m4securitygroup.co.uk",
     },
     logo: {
-      // text: "M4",
-      subtitle: "edgesecutyltd",
+      text: "",
+      // subtitle: "SECUIRTY",
     },
     mainNav: [
       { name: "Home", href: "/", hasDropdown: false },
