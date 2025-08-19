@@ -1,7 +1,7 @@
   const footerData = {
     logo: {
-      text: "M4",
-      subtitle: "SECURITY GROUP"
+      // text: "M4",
+      subtitle: "edgesecutyltd"
     },
     socialLinks: [
       { name: "Twitter", icon: "X", url: "#", bgColor: "bg-black" },
