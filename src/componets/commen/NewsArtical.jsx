@@ -16,9 +16,9 @@ const NewsArticle = ({
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   const defaultContent = [
-    "We are delighted to announce that M4 Security Group Limited has achieved ISO 14001 and ISO 45001 accreditation!",
+    "We are delighted to announce that edgesecutyltd Limited has achieved ISO 14001 and ISO 45001 accreditation!",
     "These certifications affirm our commitment to continuous improvement and maintaining the highest standards in sustainability, safety, and service delivery.",
-    "A big thank you to the entire M4 Security Group Limited team for their hard work in making this achievement a reality. Together, we are leading the way towards a safer and more responsible industry.",
+    "A big thank you to the entire edgesecutyltd Limited team for their hard work in making this achievement a reality. Together, we are leading the way towards a safer and more responsible industry.",
   ];
 
   const articleContent = content.length > 0 ? content : defaultContent;

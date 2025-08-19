@@ -58,6 +58,6 @@
         }
       }
     ],
-    bottomText: "© 2025 M4 Security Group. All rights reserved. | Privacy Policy | Terms of Service"
+    bottomText: "© 2025 edgesecutyltd. All rights reserved. | Privacy Policy | Terms of Service"
   };
 export default footerData;

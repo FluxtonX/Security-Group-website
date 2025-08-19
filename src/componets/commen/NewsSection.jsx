@@ -11,7 +11,7 @@ const NewsSection = () => {
       id: 1,
       date: "November 06, 2024",
       title: "ISO 45001 & 14001 Accredited",
-      description: "Achievement of ISO 45001 & 14001: We are delighted to announce that M4 Security Group Limited has achieved ISO 14001 and ISO 45001. These...",
+      description: "Achievement of ISO 45001 & 14001: We are delighted to announce that edgesecutyltd Limited has achieved ISO 14001 and ISO 45001. These...",
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
       icon: Award,
       category: "Certification"

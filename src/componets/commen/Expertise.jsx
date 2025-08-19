@@ -36,7 +36,7 @@ const ModernServicesSection = () => {
     {
       id: 3,
       title: "Professional Cleaning",
-      description: "Our team at M4 SECURITY GROUP specializes in providing a comprehensive range of professional cleaning services including office cleaning, industrial cleaning, and specialized sanitation.",
+      description: "Our team at edgesecutyltd specializes in providing a comprehensive range of professional cleaning services including office cleaning, industrial cleaning, and specialized sanitation.",
       image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop",
       icon: Brush,
       features: [

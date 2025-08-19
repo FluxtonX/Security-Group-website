@@ -20,7 +20,7 @@ const HeroCarousel = () => {
       subtitle: "SECURITY",
       highlight: "Nationwide",
       description:
-        "M4 Security Group is a leading security company based in London providing immense security solutions Nationwide (Manned Guarding, Loss Prevention Officers, Vacant Properties and Concierge) that fit your needs.",
+        "edgesecutyltd is a leading security company based in London providing immense security solutions Nationwide (Manned Guarding, Loss Prevention Officers, Vacant Properties and Concierge) that fit your needs.",
       image:
         "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=800&fit=crop",
       icon: Shield,

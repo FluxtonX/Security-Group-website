@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
       company: "Corporate Services Ltd",
       role: "Managing Director",
       message:
-        "For the past few years, we have worked hand in hand with M4 Security Group who have assisted us with several services. At no point have they failed in their service delivery. Officers are smart and punctual, the management team are always available to assist with any issues 24 hours a day which makes them a very reliable partner to us.",
+        "For the past few years, we have worked hand in hand with edgesecutyltd who have assisted us with several services. At no point have they failed in their service delivery. Officers are smart and punctual, the management team are always available to assist with any issues 24 hours a day which makes them a very reliable partner to us.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
       company: "London Financial District",
       role: "Security Manager",
       message:
-        "M4 Security Group has exceeded our expectations in every aspect. Their professional approach, attention to detail, and 24/7 availability have made them an invaluable partner. The quality of their security personnel and the efficiency of their management team is outstanding.",
+        "edgesecutyltd has exceeded our expectations in every aspect. Their professional approach, attention to detail, and 24/7 availability have made them an invaluable partner. The quality of their security personnel and the efficiency of their management team is outstanding.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1494790108755-2616b75f4a94?w=100&h=100&fit=crop&crop=face",

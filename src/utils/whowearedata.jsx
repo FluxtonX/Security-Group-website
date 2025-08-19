@@ -8,7 +8,7 @@ const whoWeAreData = {
       {
         heading: "Our Story",
         content:
-          "M4 Security Group was founded with the mission to provide unmatched security services while maintaining the highest professional standards.",
+          "edgesecutyltd was founded with the mission to provide unmatched security services while maintaining the highest professional standards.",
       },
       {
         heading: "Our Values",
