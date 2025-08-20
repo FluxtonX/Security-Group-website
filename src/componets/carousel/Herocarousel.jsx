@@ -20,7 +20,7 @@ const HeroCarousel = () => {
       subtitle: "SECURITY",
       highlight: "Nationwide",
       description:
-        "edgesecutyltd is a leading security company based in London providing immense security solutions Nationwide (Manned Guarding, Loss Prevention Officers, Vacant Properties and Concierge) that fit your needs.",
+        "Edge Security Ltd is a leading security company based in London providing immense security solutions Nationwide (Manned Guarding, Loss Prevention Officers, Vacant Properties and Concierge) that fit your needs.",
       image:
         "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=800&fit=crop",
       icon: Shield,
@@ -214,7 +214,10 @@ const HeroCarousel = () => {
                     className="flex flex-col sm:flex-row gap-4"
                   >
                     <motion.button
-                      whileHover={{ scale: 1.05, backgroundColor: "bg-primary" }}
+                      whileHover={{
+                        scale: 1.05,
+                        backgroundColor: "bg-primary",
+                      }}
                       whileTap={{ scale: 0.95 }}
                       className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
                     >

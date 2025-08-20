@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { Shield, Eye, Brush, Users, Building, Car } from 'lucide-react';
+import React, { useEffect, useRef, useState } from "react";
+import { motion, useInView } from "framer-motion";
+import { Shield, Eye, Brush, Users, Building, Car } from "lucide-react";
 
 const ModernServicesSection = () => {
   const sectionRef = useRef(null);
@@ -10,55 +10,63 @@ const ModernServicesSection = () => {
     {
       id: 1,
       title: "Loss Prevention",
-      description: "In the realm of retail and business, losses can significantly impact your bottom line. Our specialized loss prevention officers are trained to identify, deter, and respond to theft and fraudulent activities.",
-      image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=600&h=400&fit=crop",
+      description:
+        "In the realm of retail and business, losses can significantly impact your bottom line. Our specialized loss prevention officers are trained to identify, deter, and respond to theft and fraudulent activities.",
+      image:
+        "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=600&h=400&fit=crop",
       icon: Shield,
       features: [
         "Retail theft prevention",
         "Fraud detection",
         "Asset protection",
-        "Risk assessment"
-      ]
+        "Risk assessment",
+      ],
     },
     {
       id: 2,
       title: "Surveillance & Monitoring",
-      description: "Advanced 24/7 monitoring systems with real-time alerts and professional response teams. Our state-of-the-art CCTV and surveillance technology ensures comprehensive security coverage.",
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop",
+      description:
+        "Advanced 24/7 monitoring systems with real-time alerts and professional response teams. Our state-of-the-art CCTV and surveillance technology ensures comprehensive security coverage.",
+      image:
+        "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop",
       icon: Eye,
       features: [
         "24/7 monitoring",
         "Real-time alerts",
         "Advanced CCTV systems",
-        "Remote surveillance"
-      ]
+        "Remote surveillance",
+      ],
     },
     {
       id: 3,
       title: "Professional Cleaning",
-      description: "Our team at edgesecutyltd specializes in providing a comprehensive range of professional cleaning services including office cleaning, industrial cleaning, and specialized sanitation.",
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop",
+      description:
+        "Our team at Edge Security Ltd specializes in providing a comprehensive range of professional cleaning services including office cleaning, industrial cleaning, and specialized sanitation.",
+      image:
+        "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop",
       icon: Brush,
       features: [
         "Office cleaning",
         "Industrial sanitation",
         "Deep cleaning services",
-        "Eco-friendly solutions"
-      ]
+        "Eco-friendly solutions",
+      ],
     },
     {
       id: 4,
       title: "Corporate Security",
-      description: "Comprehensive security solutions for businesses of all sizes. From executive protection to facility security, we provide tailored services that protect your people and assets.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
+      description:
+        "Comprehensive security solutions for businesses of all sizes. From executive protection to facility security, we provide tailored services that protect your people and assets.",
+      image:
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
       icon: Building,
       features: [
         "Executive protection",
         "Facility security",
         "Access control",
-        "Emergency response"
-      ]
-    }
+        "Emergency response",
+      ],
+    },
   ];
 
   const containerVariants = {
@@ -67,64 +75,64 @@ const ModernServicesSection = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.3,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
       y: 60,
-      scale: 0.95
+      scale: 0.95,
     },
-    visible: { 
+    visible: {
       opacity: 1,
       y: 0,
       scale: 1,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    }
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
   };
 
   const imageVariants = {
     hidden: { scale: 1.2, opacity: 0 },
-    visible: { 
-      scale: 1, 
+    visible: {
+      scale: 1,
       opacity: 1,
       transition: {
         duration: 1.2,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    }
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
   };
 
   const textVariants = {
     hidden: { opacity: 0, x: 50 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       x: 0,
       transition: {
         duration: 0.8,
         delay: 0.2,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    }
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
   };
 
   return (
     <div className="py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
       {/* Header Section */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
         className="text-center mb-16 px-6"
       >
         <div className="max-w-4xl mx-auto">
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -133,7 +141,7 @@ const ModernServicesSection = () => {
             WE DO IT BETTER
           </motion.p>
           <div className="w-16 h-1 bg-primary-500 mx-auto mb-6"></div>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -141,19 +149,21 @@ const ModernServicesSection = () => {
           >
             M4SG <span className="text-priamary-600">EXPERTISE</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto"
           >
-            We cover sectors as Corporate & Industrial, Education, Finance & Insurance, Government, Rail, Retail, Leisure & Tourism, Transport & Logistics
+            We cover sectors as Corporate & Industrial, Education, Finance &
+            Insurance, Government, Rail, Retail, Leisure & Tourism, Transport &
+            Logistics
           </motion.p>
         </div>
       </motion.div>
 
       {/* Services Grid */}
-      <motion.div 
+      <motion.div
         ref={sectionRef}
         variants={containerVariants}
         initial="hidden"
@@ -163,17 +173,23 @@ const ModernServicesSection = () => {
         <div className="space-y-20">
           {services.map((service, index) => {
             const isEven = index % 2 === 0;
-            
+
             return (
               <motion.div
                 key={service.id}
                 variants={itemVariants}
                 className="group"
               >
-                <div className={`grid lg:grid-cols-2 gap-12 items-center ${isEven ? '' : 'lg:grid-flow-col-dense'}`}>
+                <div
+                  className={`grid lg:grid-cols-2 gap-12 items-center ${
+                    isEven ? "" : "lg:grid-flow-col-dense"
+                  }`}
+                >
                   {/* Image Column */}
-                  <motion.div 
-                    className={`relative ${isEven ? 'lg:order-1' : 'lg:order-2'}`}
+                  <motion.div
+                    className={`relative ${
+                      isEven ? "lg:order-1" : "lg:order-2"
+                    }`}
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.4 }}
                   >
@@ -188,7 +204,7 @@ const ModernServicesSection = () => {
                           className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-primary-900/30"></div>
-                        
+
                         {/* Floating Icon */}
                         <motion.div
                           initial={{ scale: 0, rotate: -45 }}
@@ -200,13 +216,15 @@ const ModernServicesSection = () => {
                         </motion.div>
 
                         {/* Overlay on Hover */}
-                        <motion.div 
+                        <motion.div
                           initial={{ opacity: 0 }}
                           whileHover={{ opacity: 1 }}
                           className="absolute inset-0 bg-primary-900/80 flex items-center justify-center transition-opacity duration-300"
                         >
                           <div className="text-center text-white p-6">
-                            <h4 className="font-bold text-xl mb-4">Key Features</h4>
+                            <h4 className="font-bold text-xl mb-4">
+                              Key Features
+                            </h4>
                             <ul className="space-y-2">
                               {service.features.map((feature, idx) => (
                                 <motion.li
@@ -232,9 +250,11 @@ const ModernServicesSection = () => {
                   </motion.div>
 
                   {/* Content Column */}
-                  <motion.div 
+                  <motion.div
                     variants={textVariants}
-                    className={`space-y-6 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}
+                    className={`space-y-6 ${
+                      isEven ? "lg:order-2" : "lg:order-1"
+                    }`}
                   >
                     <div className="space-y-4">
                       <motion.div
@@ -243,8 +263,8 @@ const ModernServicesSection = () => {
                         transition={{ delay: 0.5, duration: 0.8 }}
                         className="h-1 bg-primary-500 rounded-full"
                       ></motion.div>
-                      
-                      <motion.h3 
+
+                      <motion.h3
                         className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -254,7 +274,7 @@ const ModernServicesSection = () => {
                       </motion.h3>
                     </div>
 
-                    <motion.p 
+                    <motion.p
                       className="text-lg text-gray-600 leading-relaxed"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -287,17 +307,15 @@ const ModernServicesSection = () => {
                       className="pt-4"
                     >
                       <motion.button
-                        whileHover={{ 
+                        whileHover={{
                           scale: 1.05,
-                          boxShadow: "0 10px 30px rgba(34, 197, 94, 0.3)"
+                          boxShadow: "0 10px 30px rgba(34, 197, 94, 0.3)",
                         }}
                         whileTap={{ scale: 0.95 }}
                         className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg group"
                       >
                         Learn More
-                        <motion.span
-                          className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-200"
-                        >
+                        <motion.span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-200">
                           →
                         </motion.span>
                       </motion.button>
@@ -322,12 +340,13 @@ const ModernServicesSection = () => {
             Ready to Secure Your Business?
           </h3>
           <p className="text-lg text-gray-600 mb-8">
-            Contact us today to discuss your security needs and get a customized solution.
+            Contact us today to discuss your security needs and get a customized
+            solution.
           </p>
           <motion.button
-            whileHover={{ 
+            whileHover={{
               scale: 1.05,
-              boxShadow: "0 20px 40px rgba(34, 197, 94, 0.3)"
+              boxShadow: "0 20px 40px rgba(34, 197, 94, 0.3)",
             }}
             whileTap={{ scale: 0.95 }}
             className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-xl"

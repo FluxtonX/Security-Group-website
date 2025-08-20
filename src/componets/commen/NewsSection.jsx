@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { Calendar, ArrowRight, Award, Users, Building2 } from 'lucide-react';
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { Calendar, ArrowRight, Award, Users, Building2 } from "lucide-react";
 
 const NewsSection = () => {
   const sectionRef = useRef(null);
@@ -11,29 +11,35 @@ const NewsSection = () => {
       id: 1,
       date: "November 06, 2024",
       title: "ISO 45001 & 14001 Accredited",
-      description: "Achievement of ISO 45001 & 14001: We are delighted to announce that edgesecutyltd Limited has achieved ISO 14001 and ISO 45001. These...",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
+      description:
+        "Achievement of ISO 45001 & 14001: We are delighted to announce that Edge Security Ltd Limited has achieved ISO 14001 and ISO 45001. These...",
+      image:
+        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
       icon: Award,
-      category: "Certification"
+      category: "Certification",
     },
     {
       id: 2,
       date: "November 14, 2023",
       title: "M4SG Introduces Online Job Portal",
-      description: "M4SG has introduced its new job portal to streamline and enhance its recruitment process. This is important for making the recruitment process easier and more...",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop",
+      description:
+        "M4SG has introduced its new job portal to streamline and enhance its recruitment process. This is important for making the recruitment process easier and more...",
+      image:
+        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop",
       icon: Users,
-      category: "Technology"
+      category: "Technology",
     },
     {
       id: 3,
       date: "November 14, 2023",
       title: "Building A Socially Responsible Business",
-      description: "M4SG is holding a meeting today, hosted by CEO Aamir Shams and other members of the lead team, in central London. The purpose of the meeting is to discuss...",
-      image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&h=300&fit=crop",
+      description:
+        "M4SG is holding a meeting today, hosted by CEO Aamir Shams and other members of the lead team, in central London. The purpose of the meeting is to discuss...",
+      image:
+        "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&h=300&fit=crop",
       icon: Building2,
-      category: "Corporate"
-    }
+      category: "Corporate",
+    },
   ];
 
   const containerVariants = {
@@ -42,48 +48,48 @@ const NewsSection = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.3
-      }
-    }
+        delayChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 50,
-      scale: 0.95
+      scale: 0.95,
     },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    }
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
   };
 
   const headerVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
-    }
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <motion.div 
+        <motion.div
           variants={headerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           className="text-center mb-16"
         >
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -92,7 +98,7 @@ const NewsSection = () => {
             Latest News
           </motion.p>
           <div className="w-16 h-1 bg-primary-500 mx-auto mb-6"></div>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -103,7 +109,7 @@ const NewsSection = () => {
         </motion.div>
 
         {/* News Grid */}
-        <motion.div 
+        <motion.div
           ref={sectionRef}
           variants={containerVariants}
           initial="hidden"
@@ -114,9 +120,9 @@ const NewsSection = () => {
             <motion.article
               key={item.id}
               variants={itemVariants}
-              whileHover={{ 
+              whileHover={{
                 y: -10,
-                transition: { duration: 0.3 }
+                transition: { duration: 0.3 },
               }}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
             >
@@ -128,7 +134,7 @@ const NewsSection = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                
+
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
                   <span className="bg-primary-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
@@ -181,24 +187,22 @@ const NewsSection = () => {
         </motion.div>
 
         {/* View All Button */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.8, duration: 0.6 }}
           className="text-center mt-12"
         >
           <motion.button
-            whileHover={{ 
+            whileHover={{
               scale: 1.05,
-              boxShadow: "0 15px 35px rgba(34, 197, 94, 0.3)"
+              boxShadow: "0 15px 35px rgba(34, 197, 94, 0.3)",
             }}
             whileTap={{ scale: 0.95 }}
             className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg group"
           >
             View All News
-            <motion.span
-              className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-200"
-            >
+            <motion.span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-200">
               →
             </motion.span>
           </motion.button>

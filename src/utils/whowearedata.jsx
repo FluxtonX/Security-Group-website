@@ -8,7 +8,7 @@ const whoWeAreData = {
       {
         heading: "Our Story",
         content:
-          "edgesecutyltd was founded with the mission to provide unmatched security services while maintaining the highest professional standards.",
+          "Edge Security Ltd was founded with the mission to provide unmatched security services while maintaining the highest professional standards.",
       },
       {
         heading: "Our Values",
