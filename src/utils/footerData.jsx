@@ -51,11 +51,11 @@ const footerData = {
         links: [
           { name: "Quality Policy", url: "/quality-policy" },
           { name: "Contact Us", url: "/contact" },
-          { name: "Mail", url: "mailto:info@m4securitygroup.co.uk" },
-          { name: "Call Us : 0208 6165454", url: "tel:02086165454" },
+          { name: "Mail", url: "mailto:edgesec.ltd7@gmail.com" },
+          { name: "Call Us : 07498506669", url: "tel:07498506669" },
           {
-            name: "info@m4securitygroup.co.uk",
-            url: "mailto:info@m4securitygroup.co.uk",
+            name: "edgesec.ltd7@gmail.com",
+            url: "mailto:edgesec.ltd7@gmail.com",
           },
         ],
       },
