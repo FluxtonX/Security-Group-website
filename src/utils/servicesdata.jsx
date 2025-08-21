@@ -1,8 +1,11 @@
+import dog from "../assets/services/dog.webp"
+
+
 const ServicesData = {
   "security-guards": {
     title: "Security Guards",
     imageSrc:
-      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=800&fit=crop&auto=format&q=80",
+     dog,
     bgColor: "bg-primary",
     sections: [
       {
@@ -14,6 +17,11 @@ const ServicesData = {
         heading: "24/7 Protection",
         content:
           "We provide round-the-clock security coverage for both residential and commercial properties.",
+      },
+      {
+        heading: "Comprehensive Guarding Services",
+        content:
+          "We provide professional, licensed security guards to protect your people, property, and assets. Our team ensures safety through reliable on-site guarding, patrols, and rapid response — giving you peace of mind, 24/7.",
       },
     ],
   },

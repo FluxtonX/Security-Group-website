@@ -9,7 +9,7 @@ const NewsSection = () => {
   const newsItems = [
     {
       id: 1,
-      date: "November 06, 2024",
+      date: "August 01, 2025",
       title: "ISO 45001 & 14001 Accredited",
       description:
         "Achievement of ISO 45001 & 14001: We are delighted to announce that Edge Security Ltd Limited has achieved ISO 14001 and ISO 45001. These...",
@@ -20,7 +20,7 @@ const NewsSection = () => {
     },
     {
       id: 2,
-      date: "November 14, 2023",
+      date: "August 15, 2025",
       title: "Edge Security Introduces Online Job Portal",
       description:
         "Edge Security has introduced its new job portal to streamline and enhance its recruitment process. This is important for making the recruitment process easier and more...",
@@ -31,7 +31,7 @@ const NewsSection = () => {
     },
     {
       id: 3,
-      date: "November 14, 2023",
+      date: "August 11, 2025",
       title: "Building A Socially Responsible Business",
       description:
         "Edge Security is holding a meeting today, hosted by CEO Aamir Shams and other members of the lead team, in central London. The purpose of the meeting is to discuss...",

@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Shield, Eye, Brush, Users, Building, Car } from "lucide-react";
+import { Shield, Eye, Brush, Users, Building, Car,ShieldAlert } from "lucide-react";
 import security from "../../assets/home banner/security.jpg"
 import servilance from "../../assets/expertise/servilance.webp"
 import clean1 from "../../assets/expertise/clean.webp"
 import corporate1 from "../../assets/expertise/corporate.webp"
+import dog from "../../assets/services/dog.webp"
 
 const ModernServicesSection = () => {
   const sectionRef = useRef(null);
@@ -71,6 +72,21 @@ const ModernServicesSection = () => {
         "Emergency response",
       ],
     },
+    {
+  id: 5,
+  title: "Security Guarding",
+  description:
+    "We provide professional, licensed security guards to protect your people, property, and assets. Our team ensures safety through reliable on-site guarding, patrols, and rapid response — giving you peace of mind, 24/7.",
+  image: dog, // 👉 replace with your actual image import
+  icon: ShieldAlert,     // 👉 pick a suitable icon (e.g., Shield from lucide-react)
+  features: [
+    "Licensed and trained personnel",
+    "On-site guarding",
+    "Patrol services",
+    "Rapid response 24/7",
+  ],
+},
+
   ];
 
   const containerVariants = {
