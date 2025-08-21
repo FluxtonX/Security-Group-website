@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Shield, Eye, Brush, Users, Building, Car } from "lucide-react";
+import security from "../../assets/home banner/security.jpg"
+import servilance from "../../assets/expertise/servilance.webp"
+import clean1 from "../../assets/expertise/clean.webp"
+import corporate1 from "../../assets/expertise/corporate.webp"
 
 const ModernServicesSection = () => {
   const sectionRef = useRef(null);
@@ -13,7 +17,7 @@ const ModernServicesSection = () => {
       description:
         "In the realm of retail and business, losses can significantly impact your bottom line. Our specialized loss prevention officers are trained to identify, deter, and respond to theft and fraudulent activities.",
       image:
-        "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=600&h=400&fit=crop",
+        security,
       icon: Shield,
       features: [
         "Retail theft prevention",
@@ -28,7 +32,7 @@ const ModernServicesSection = () => {
       description:
         "Advanced 24/7 monitoring systems with real-time alerts and professional response teams. Our state-of-the-art CCTV and surveillance technology ensures comprehensive security coverage.",
       image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop",
+        servilance,
       icon: Eye,
       features: [
         "24/7 monitoring",
@@ -43,7 +47,7 @@ const ModernServicesSection = () => {
       description:
         "Our team at Edge Security Ltd specializes in providing a comprehensive range of professional cleaning services including office cleaning, industrial cleaning, and specialized sanitation.",
       image:
-        "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop",
+       clean1,
       icon: Brush,
       features: [
         "Office cleaning",
@@ -58,7 +62,7 @@ const ModernServicesSection = () => {
       description:
         "Comprehensive security solutions for businesses of all sizes. From executive protection to facility security, we provide tailored services that protect your people and assets.",
       image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
+        corporate1,
       icon: Building,
       features: [
         "Executive protection",
@@ -147,7 +151,7 @@ const ModernServicesSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6"
           >
-            Edge Secuirity <span className="text-priamary-600">EXPERTISE</span>
+            Edge Security <span className="text-priamary-600">EXPERTISE</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

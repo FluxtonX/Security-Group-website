@@ -37,7 +37,7 @@ const footerData = {
       content: {
         type: "links",
         links: [
-          { name: "About Edge Secuirity", url: "/about" },
+          { name: "About Edge Security", url: "/about" },
           { name: "CSR", url: "/csr" },
           { name: "Management", url: "/management" },
           { name: "Location", url: "/location" },

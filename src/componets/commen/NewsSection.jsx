@@ -21,9 +21,9 @@ const NewsSection = () => {
     {
       id: 2,
       date: "November 14, 2023",
-      title: "Edge Secuirity Introduces Online Job Portal",
+      title: "Edge Security Introduces Online Job Portal",
       description:
-        "Edge Secuirity has introduced its new job portal to streamline and enhance its recruitment process. This is important for making the recruitment process easier and more...",
+        "Edge Security has introduced its new job portal to streamline and enhance its recruitment process. This is important for making the recruitment process easier and more...",
       image:
         "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop",
       icon: Users,
@@ -34,7 +34,7 @@ const NewsSection = () => {
       date: "November 14, 2023",
       title: "Building A Socially Responsible Business",
       description:
-        "Edge Secuirity is holding a meeting today, hosted by CEO Aamir Shams and other members of the lead team, in central London. The purpose of the meeting is to discuss...",
+        "Edge Security is holding a meeting today, hosted by CEO Aamir Shams and other members of the lead team, in central London. The purpose of the meeting is to discuss...",
       image:
         "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&h=300&fit=crop",
       icon: Building2,
@@ -104,7 +104,7 @@ const NewsSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800"
           >
-            Edge Secuirity <span className="text-primary">News</span>
+            Edge Security <span className="text-primary">News</span>
           </motion.h2>
         </motion.div>
 

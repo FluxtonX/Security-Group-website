@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import security from "../../assets/home banner/security.jpg"
+import security1 from "../../assets/home banner/security1.jpg"
+import security2 from "../../assets/home banner/security2.webp"
+import security3 from "../../assets/home banner/security3.webp"
 import {
   ChevronLeft,
   ChevronRight,
@@ -22,7 +26,7 @@ const HeroCarousel = () => {
       description:
         "Edge Security Ltd is a leading security company based in London providing immense security solutions Nationwide (Manned Guarding, Loss Prevention Officers, Vacant Properties and Concierge) that fit your needs.",
       image:
-        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=800&fit=crop",
+        security1,
       icon: Shield,
     },
     {
@@ -33,7 +37,7 @@ const HeroCarousel = () => {
       description:
         "Our highly trained security professionals deliver exceptional service with years of experience in corporate security, event management, and property protection across the United Kingdom.",
       image:
-        "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1200&h=800&fit=crop",
+        security,
       icon: Users,
     },
     {
@@ -44,7 +48,7 @@ const HeroCarousel = () => {
       description:
         "Comprehensive security solutions tailored for businesses of all sizes. From small offices to large corporate complexes, we provide customized security strategies that protect your assets.",
       image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=800&fit=crop",
+        security2,
       icon: Building,
     },
     {
@@ -55,7 +59,7 @@ const HeroCarousel = () => {
       description:
         "Advanced monitoring systems with real-time alerts and professional response teams. Our state-of-the-art technology ensures your property is protected around the clock.",
       image:
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=800&fit=crop",
+        security3,
       icon: Eye,
     },
   ];

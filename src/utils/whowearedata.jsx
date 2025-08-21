@@ -1,5 +1,5 @@
 const whoWeAreData = {
-  "about-Edge Secuirity": {
+  "about-edge-security": {
     title: "About Edge Secuirity",
     imageSrc:
       "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=800&fit=crop&auto=format&q=80",

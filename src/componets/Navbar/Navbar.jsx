@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ChevronDown, Phone, Mail, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import navData from "../../utils/navdata.jsx"; // Adjust the import path as necessary
+import { FaLessThan } from "react-icons/fa";
 const ModernNavbarSystem = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -191,8 +192,10 @@ const ModernNavbarSystem = () => {
                                 key={dropdownIndex}
                                 to={`${item.href}/${dropdownItem.slug}`}
                                 className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-text hover:bg-primary-light rounded-md transition-colors duration-200"
+                                    onClick={()=>setMobileMenuOpen(false)}
                               >
                                 {dropdownItem.name}
+                            
                               </Link>
                             )
                           )}

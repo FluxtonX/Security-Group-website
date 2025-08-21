@@ -22,7 +22,7 @@ const TestimonialsSection = () => {
       company: "Property Management",
       role: "Operations Director",
       message:
-        "Edge Secuirity were really pro-active with us, having been pulled in at such short notice they were still able to organise staff to arrange site visits and start to build those relationships with the site team and management. Many cleaners came and were all pro-active and willing to work to a great standard, receiving good guidance and training from their management. A special shout out to Donna and Bilal who kept regular communication each day - this made things so much easier when making new arrangements or simply understanding where we are at with the days works. Our turnover clean was successful and we hope to use Edge Secuirity again in the future.",
+        "Edge Security were really pro-active with us, having been pulled in at such short notice they were still able to organise staff to arrange site visits and start to build those relationships with the site team and management. Many cleaners came and were all pro-active and willing to work to a great standard, receiving good guidance and training from their management. A special shout out to Donna and Bilal who kept regular communication each day - this made things so much easier when making new arrangements or simply understanding where we are at with the days works. Our turnover clean was successful and we hope to use Edge Security again in the future.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
@@ -142,7 +142,7 @@ const TestimonialsSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800"
           >
-            Edge Secuirity <span className="text-primary">Testimonials</span>
+            Edge Security <span className="text-primary">Testimonials</span>
           </motion.h2>
         </motion.div>
 

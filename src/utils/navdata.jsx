@@ -15,9 +15,9 @@ const navData = {
       hasDropdown: true,
       dropdownItems: [
         {
-          name: "About Edge Secuirity",
-          slug: "about-Edge Secuirity",
-          content: "About Edge Secuirity page.",
+          name: "About Edge Security",
+          slug: "about-edge-security",
+          content: "About Edge Security page.",
         },
         {
           name: "Corporate Social Responsibility",
