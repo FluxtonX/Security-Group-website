@@ -1,7 +1,7 @@
 const footerData = {
   logo: {
-    // text: "M4",
-    // subtitle: "Edge Security Ltd"
+    text: "Edge ",
+    subtitle: "LTD",
   },
   socialLinks: [
     { name: "Twitter", icon: "X", url: "#", bgColor: "bg-black" },
@@ -37,7 +37,7 @@ const footerData = {
       content: {
         type: "links",
         links: [
-          { name: "About M4SG", url: "/about" },
+          { name: "About Edge Secuirity", url: "/about" },
           { name: "CSR", url: "/csr" },
           { name: "Management", url: "/management" },
           { name: "Location", url: "/location" },

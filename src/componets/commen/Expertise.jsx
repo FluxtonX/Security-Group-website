@@ -147,7 +147,7 @@ const ModernServicesSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6"
           >
-            M4SG <span className="text-priamary-600">EXPERTISE</span>
+            Edge Secuirity <span className="text-priamary-600">EXPERTISE</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

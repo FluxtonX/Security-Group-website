@@ -11,10 +11,10 @@ function News() {
       <NewsArticle
         category="Technology"
         categoryColor="text-blue-600"
-        title="M4SG Introduces Online Job Portal"
+        title="Edge Secuirity Introduces Online Job Portal"
         date="14 Nov 2023"
         content={[
-          "M4SG has introduced its new job portal to streamline and enhance its recruitment process.",
+          "Edge Secuirity has introduced its new job portal to streamline and enhance its recruitment process.",
           "This is important for making the recruitment process easier and more efficient for both candidates and our HR team.",
           "The new portal features advanced filtering, real-time notifications, and a user-friendly interface designed to improve the overall experience.",
         ]}

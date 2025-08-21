@@ -4,8 +4,8 @@ const navData = {
     email: "edgesec.ltd7@gmail.com",
   },
   logo: {
-    text: "",
-    // subtitle: "SECUIRTY",
+    text: "Edge ",
+    subtitle: "LTD",
   },
   mainNav: [
     { name: "Home", href: "/", hasDropdown: false },
@@ -15,9 +15,9 @@ const navData = {
       hasDropdown: true,
       dropdownItems: [
         {
-          name: "About M4SG",
-          slug: "about-m4sg",
-          content: "About M4SG page.",
+          name: "About Edge Secuirity",
+          slug: "about-Edge Secuirity",
+          content: "About Edge Secuirity page.",
         },
         {
           name: "Corporate Social Responsibility",

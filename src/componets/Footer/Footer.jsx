@@ -28,7 +28,7 @@ const ModernFooter = () => {
             <div className="flex items-center">
               <div className="text-3xl font-bold text-black">
                 {footerData.logo.text}
-                <span className="text-primary">Edge Security Ltd</span>
+                <span className="text-primary">Security</span>
               </div>
               <div className="ml-3 text-sm text-black font-medium">
                 {footerData.logo.subtitle}
