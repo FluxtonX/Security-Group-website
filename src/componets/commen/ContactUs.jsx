@@ -79,7 +79,7 @@ const ContactForm = () => {
     {
       icon: Phone,
       title: "Call Us",
-      info: "07498506669",
+      info: "+44 7498506669",
       color: "text-blue-500",
     },
     {
@@ -163,7 +163,16 @@ const ContactForm = () => {
                       {item.title}
                     </p>
                     <p className="text-gray-800 font-semibold text-lg group-hover:text-gray-900 transition-colors">
-                      {item.info}
+                      {item.title === "Call Us" ? (
+                        <a
+                          href={`tel:${item.info}`}
+                          className="hover:underline"
+                        >
+                          {item.info}
+                        </a>
+                      ) : (
+                        item.info
+                      )}
                     </p>
                   </div>
                 </motion.div>

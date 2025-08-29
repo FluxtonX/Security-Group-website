@@ -1,6 +1,6 @@
 const navData = {
   topBar: {
-    phone: "07498506669",
+    phone: "+44 7498506669",
     email: "edgesec.ltd7@gmail.com",
   },
   logo: {

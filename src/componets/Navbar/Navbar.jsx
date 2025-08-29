@@ -27,7 +27,8 @@ const ModernNavbarSystem = () => {
         <div className="max-w-7xl mx-auto flex justify-end items-center space-x-6 text-sm">
           <div className="flex items-center space-x-2">
             <Phone size={16} />
-            <span>{navData.topBar.phone}</span>
+
+            <a href={`tel:${navData.topBar.phone}`}>{navData.topBar.phone}</a>
           </div>
           <div className="flex items-center space-x-2">
             <Mail size={16} />
@@ -192,10 +193,9 @@ const ModernNavbarSystem = () => {
                                 key={dropdownIndex}
                                 to={`${item.href}/${dropdownItem.slug}`}
                                 className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-text hover:bg-primary-light rounded-md transition-colors duration-200"
-                                    onClick={()=>setMobileMenuOpen(false)}
+                                onClick={() => setMobileMenuOpen(false)}
                               >
                                 {dropdownItem.name}
-                            
                               </Link>
                             )
                           )}

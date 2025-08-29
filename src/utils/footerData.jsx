@@ -52,7 +52,7 @@ const footerData = {
           { name: "Quality Policy", url: "/quality-policy" },
           { name: "Contact Us", url: "/contact" },
           { name: "Mail", url: "mailto:edgesec.ltd7@gmail.com" },
-          { name: "Call Us : 07498506669", url: "tel:07498506669" },
+          { name: "Call Us : +44 7498506669", url: "tel:+44 7498506669" },
           {
             name: "edgesec.ltd7@gmail.com",
             url: "mailto:edgesec.ltd7@gmail.com",
