@@ -51,11 +51,11 @@ const footerData = {
         links: [
           { name: "Quality Policy", url: "/quality-policy" },
           { name: "Contact Us", url: "/contact" },
-          { name: "Mail", url: "mailto:info@edgesecurity.uk" },
+          { name: "Mail", url: "mailto:info@edgesecurity.site" },
           { name: "Call Us : +44 7498506669", url: "tel:+44 7498506669" },
           {
-            name: "info@edgesecurity.uk",
-            url: "mailto:info@edgesecurity.uk",
+            name: "info@edgesecurity.site",
+            url: "mailto:info@edgesecurity.site",
           },
         ],
       },

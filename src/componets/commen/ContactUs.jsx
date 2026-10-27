@@ -85,7 +85,7 @@ const ContactForm = () => {
     {
       icon: Mail,
       title: "Email",
-      info: "info@edgesecurity.uk",
+      info: "info@edgesecurity.site",
       color: "text-purple-500",
     },
   ];
